@@ -5,10 +5,11 @@ export enum SecretSauce {
     Pants
 }
 
-interface ISecretSauceOptions {
-    temperature: number
-    windSpeed: number
-    humidity: number
+export interface ISecretSauceOptions {
+    temperature?: number
+    windSpeed?: number
+    humidity?: number
+    rain?: number
 }
 
 enum SecretSauceOptionsWeights {
@@ -18,34 +19,21 @@ enum SecretSauceOptionsWeights {
 }
 
 export const getTheSecretSauce = (options: ISecretSauceOptions) => {
-    const { temperature = 10, windSpeed = 10, humidity = 50 } = options;
+    if (!options) {
+        return undefined
+    }
+    const { temperature = 10, windSpeed = 10, humidity = 50, rain = 0 } = options;
     let magic = 0;
     const normalizedTemp = normalizeTemp(temperature) * SecretSauceOptionsWeights.Temperature;
     const normalizedHumidity = normalizeHumidity(humidity) * SecretSauceOptionsWeights.Humidity;
     const normalizedSpeed = normalizeWind(windSpeed) * SecretSauceOptionsWeights.WindSpeed;
+    if (rain > 50) { //50 percent rain
+        return SecretSauce.Pants
+    }
     if ((normalizedTemp + normalizedHumidity + normalizedSpeed) >= 0.5) {
         return SecretSauce.Shorts;
     }
     return SecretSauce.Pants;
-
-    // if (temperature > 30) {
-    //     return SecretSauce.Shorts;
-    // }
-    // if (temperature > 20) { // high temp
-    //     if (windSpeed > 15 && humidity < 80) {
-    //         return SecretSauce.Pants;
-    //     } else {
-    //         return SecretSauce.Shorts;
-    //     }
-    // } else if (temperature > 18) {
-    //     if (windSpeed < 10 && humidity > 80) {
-    //         return SecretSauce.Shorts;
-    //     }
-    //     else {
-    //         return SecretSauce.Shorts;
-    //     }
-    // }
-    // return SecretSauce.Pants;
 }
 
 const negativeImpact = (value: number) => {
