@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 // import { ThemeProvider, makeStyles } from '@material-ui/styles';
 // import { Theme, theme } from './theme';
@@ -6,6 +6,7 @@ import ShortsOrPants from './core/ShortsOrPants';
 import { SecretSauce } from './utils/secretSauce';
 import { Tabs, PageHeader, Button, Descriptions } from 'antd';
 import Day from './core/Day';
+import { api } from './utils/api';
 
 const { TabPane } = Tabs;
 
@@ -21,6 +22,13 @@ const { TabPane } = Tabs;
 
 const App: React.FC = () => {
   // const classes = useStyles();
+  const [weather, setWeather] = useState();
+  if (!weather) {
+    api().then((weather) => {
+      setWeather(weather);
+    });
+  }
+
   return (
     <PageHeader
       ghost={false}
@@ -31,7 +39,7 @@ const App: React.FC = () => {
 
       <Tabs defaultActiveKey="1" >
         <TabPane tab="Today" key="1">
-          <Day />
+          <Day weather={weather} />
         </TabPane>
         <TabPane tab="Tomorrow" key="2">
           <ShortsOrPants

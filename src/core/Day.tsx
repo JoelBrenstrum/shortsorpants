@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
-import { SecretSauce, getTheSecretSauce } from '../utils/secretSauce'
+import { SecretSauce, getTheSecretSauce, ISecretSauceOptions } from '../utils/secretSauce'
 import { api } from '../utils/api';
 import ShortsOrPants from './ShortsOrPants';
 
-const Day: React.FC = (props) => {
-    const [weather, setWeather] = useState();
-    if (!weather) {
-        api().then((weather) => {
-            setWeather(weather);
-        });
-    }
+type DayProps = {
+    weather: ISecretSauceOptions
+}
+
+const Day: React.FC<DayProps> = (props) => {
+
     return (
         <ShortsOrPants
-            clothing={getTheSecretSauce(weather)} />
+            clothing={getTheSecretSauce(props.weather)} />
 
     );
 }
