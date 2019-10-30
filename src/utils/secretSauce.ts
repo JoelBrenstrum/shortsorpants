@@ -7,6 +7,8 @@ export enum SecretSauce {
 
 export interface ISecretSauceOptions {
     temperature?: number
+    temp_min?: number
+    temp_max?: number
     windSpeed?: number
     humidity?: number
     rain?: number

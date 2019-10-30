@@ -12,6 +12,8 @@ export const api = async () => {
                     humidity: json.main.humidity,
                     windSpeed: json.wind.speed,
                     temperature: json.main.temp,
+                    temp_min: json.main.temp_min,
+                    temp_max: json.main.temp_max,
                 })
             });
         }
