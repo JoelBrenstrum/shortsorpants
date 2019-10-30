@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/shortsorpants/static/css/main.3a5578be.chunk.css",
-    "main.js": "/shortsorpants/static/js/main.8cb69fb4.chunk.js",
-    "main.js.map": "/shortsorpants/static/js/main.8cb69fb4.chunk.js.map",
+    "main.js": "/shortsorpants/static/js/main.fbff743b.chunk.js",
+    "main.js.map": "/shortsorpants/static/js/main.fbff743b.chunk.js.map",
     "runtime-main.js": "/shortsorpants/static/js/runtime-main.f0f7f037.js",
     "runtime-main.js.map": "/shortsorpants/static/js/runtime-main.f0f7f037.js.map",
     "static/css/2.aa7fcd32.chunk.css": "/shortsorpants/static/css/2.aa7fcd32.chunk.css",
     "static/js/2.a6702cc7.chunk.js": "/shortsorpants/static/js/2.a6702cc7.chunk.js",
     "static/js/2.a6702cc7.chunk.js.map": "/shortsorpants/static/js/2.a6702cc7.chunk.js.map",
     "index.html": "/shortsorpants/index.html",
-    "precache-manifest.0ba1528000e4b6c3364bde0e25b7cd66.js": "/shortsorpants/precache-manifest.0ba1528000e4b6c3364bde0e25b7cd66.js",
+    "precache-manifest.d58b3c9a5d9df5c1460259bbdcbb0433.js": "/shortsorpants/precache-manifest.d58b3c9a5d9df5c1460259bbdcbb0433.js",
     "service-worker.js": "/shortsorpants/service-worker.js",
     "static/css/2.aa7fcd32.chunk.css.map": "/shortsorpants/static/css/2.aa7fcd32.chunk.css.map",
     "static/css/main.3a5578be.chunk.css.map": "/shortsorpants/static/css/main.3a5578be.chunk.css.map"
@@ -19,6 +19,6 @@
     "static/css/2.aa7fcd32.chunk.css",
     "static/js/2.a6702cc7.chunk.js",
     "static/css/main.3a5578be.chunk.css",
-    "static/js/main.8cb69fb4.chunk.js"
+    "static/js/main.fbff743b.chunk.js"
   ]
 }
