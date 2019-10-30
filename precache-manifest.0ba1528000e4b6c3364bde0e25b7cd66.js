@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a8fb69dc0c565999c7cbc6a91260d13a",
+    "revision": "4a8fcfdb4e12f7c4559e11a8e50bfe67",
     "url": "/shortsorpants/index.html"
   },
   {
-    "revision": "ab4941c990d54abc4306",
+    "revision": "80b903d691db5f8c43bc",
     "url": "/shortsorpants/static/css/2.aa7fcd32.chunk.css"
   },
   {
-    "revision": "9088fd7c459078084106",
+    "revision": "da9b26d9c6debabc49c9",
     "url": "/shortsorpants/static/css/main.3a5578be.chunk.css"
   },
   {
-    "revision": "ab4941c990d54abc4306",
-    "url": "/shortsorpants/static/js/2.791163ee.chunk.js"
+    "revision": "80b903d691db5f8c43bc",
+    "url": "/shortsorpants/static/js/2.a6702cc7.chunk.js"
   },
   {
-    "revision": "9088fd7c459078084106",
-    "url": "/shortsorpants/static/js/main.18afbc2e.chunk.js"
+    "revision": "da9b26d9c6debabc49c9",
+    "url": "/shortsorpants/static/js/main.8cb69fb4.chunk.js"
   },
   {
     "revision": "714977425cdf7e4b1eec",
